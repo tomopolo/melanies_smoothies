@@ -11,13 +11,6 @@ st.write("""Choose the fruits you want in your custom Smoothie!""")
 name_on_order = st.text_input("Name on Smoothie:")
 st.write("The name on your smoothie will be: ", name_on_order)
 
-# # Add selection box from input widgets
-# option = st.selectbox(
-#     "What is your favorite fruit?",
-#     ("Banana", "Strawberies", "Peaches"),
-# )
-# st.write("Your favorite fruit is:", option)
-
 # session = get_active_session()
 cnx = st.connection("snowflake")
 session = cnx.session()
